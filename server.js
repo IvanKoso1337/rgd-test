@@ -15,6 +15,7 @@ app.get('/', function (req, res) {
     })
 
     GoveeClient.getDevices().then(data => console.log(data))
+    res.send('Hello World!');
 })
 
 
